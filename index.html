@@ -1,24 +1,101 @@
+```html
 <!DOCTYPE html>
 <html lang="bn">
 <head>
-    <meta charset="UTF-8">
-    <title>Lifeline Services</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
-        header { background: #333; color: #fff; padding: 1rem; text-align: center; }
-        .hero { padding: 2rem; text-align: center; background: #f4f4f4; }
-        .btn { display: inline-block; padding: 10px 20px; background: #007bff; color: white; text-decoration: none; border-radius: 5px; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lifeline Services - High Speed Internet</title>
+<style>
+:root {
+--primary-color: #00ffcc;
+--secondary-color: #003366;
+--text-dark: #333;
+--bg-light: #f9f9f9;
+}
+body {
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+margin: 0;
+padding: 0;
+background: linear-gradient(135deg, var(--secondary-color), #001122);
+color: white;
+}
+header {
+background: rgba(0, 51, 102, 0.9);
+padding: 1.5rem;
+text-align: center;
+border-bottom: 2px solid var(--primary-color);
+}
+h1 { margin: 0; color: var(--primary-color); font-size: 2.5rem; }
+.hero {
+padding: 4rem 1rem;
+text-align: center;
+background: radial-gradient(circle, rgba(0,255,204,0.1) 0%, rgba(0,0,0,0) 70%);
+}
+.hero h2 { font-size: 3rem; margin-bottom: 1rem; }
+.hero p { font-size: 1.2rem; margin-bottom: 2rem; color: #ccc; }
+.package-container {
+display: flex;
+justify-content: center;
+gap: 20px;
+padding: 2rem;
+flex-wrap: wrap;
+}
+.package-card {
+background: white;
+color: var(--text-dark);
+padding: 2rem;
+border-radius: 10px;
+width: 300px;
+text-align: center;
+box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+transition: transform 0.3s;
+}
+.package-card:hover { transform: translateY(-10px); }
+.package-card h3 { color: var(--secondary-color); font-size: 1.8rem; }
+.price { font-size: 1.5rem; font-weight: bold; color: #ff6600; margin: 1rem 0; }
+.btn {
+display: inline-block;
+padding: 12px 25px;
+background: var(--secondary-color);
+color: white;
+text-decoration: none;
+border-radius: 5px;
+font-weight: bold;
+transition: background 0.3s;
+}
+.btn:hover { background: var(--primary-color); color: var(--text-dark); }
+</style>
 </head>
 <body>
-    <header>
-        <h1>Lifeline Services</h1>
-    </header>
-    <section class="hero">
-        <h2>দ্রুত ও নির্ভরযোগ্য ইন্টারনেট</h2>
-        <p>আপনার সকল ডিজিটাল প্রয়োজনে আমরা আছি পাশে।</p>
-        <a href="#" class="btn">প্যাকেজ দেখুন</a>
-    </section>
+<header>
+<h1>Lifeline Services</h1>
+</header>
+<section class="hero">
+<h2>নিরবচ্ছিন্ন ও দ্রুতগতির ইন্টারনেট</h2>
+<p>আপনার প্রতিদিনের অনলাইন অভিজ্ঞতাকে করুন আরও গতিময়।</p>
+</section>
+<div class="package-container">
+<div class="package-card">
+<h3>স্টার্টার প্যাক</h3>
+<p>বেসিক ব্রাউজিংয়ের জন্য</p>
+<div class="price">৫০০ টাকা / মাস</div>
+<p>গতি: ১০ Mbps</p>
+<a href="#" class="btn">এখনই কিনুন</a>
+</div>
+<div class="package-card" style="border: 2px solid var(--primary-color);">
+<h3>পপুলার প্যাক</h3>
+<p>স্ট্রিমিং ও গেমিংয়ের জন্য</p>
+<div class="price">১০০০ টাকা / মাস</div>
+<p>গতি: ৩০ Mbps</p>
+<a href="#" class="btn">এখনই কিনুন</a>
+</div>
+<div class="package-card">
+<h3>প্রো প্যাক</h3>
+<p>অফিস ও হেভি ইউজের জন্য</p>
+<div class="price">১৫০০ টাকা / মাস</div>
+<p>গতি: ৫০ Mbps</p>
+<a href="#" class="btn">এখনই কিনুন</a>
+</div>
+</div>
 </body>
 </html>
-
